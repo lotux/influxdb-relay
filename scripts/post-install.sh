@@ -13,7 +13,7 @@ function install_init {
 
 function install_systemd {
     cp -f $SCRIPT_DIR/influxdb-relay.service /lib/systemd/system/influxdb-relay.service
-    systemctl enable influxdb-relay
+    systemctl enable influxdb-relay && true
 }
 
 function install_update_rcd {

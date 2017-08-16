@@ -25,7 +25,7 @@ RUN wget https://storage.googleapis.com/golang/go${GO_VERSION}.linux-${GO_ARCH}.
    rm /go${GO_VERSION}.linux-${GO_ARCH}.tar.gz
 ENV PATH /usr/local/go/bin:$PATH
 
-ENV PROJECT_DIR $GOPATH/src/github.com/influxdata/influxdb-relay
+ENV PROJECT_DIR $GOPATH/src/github.com/lotux/influxdb-relay
 ENV PATH $GOPATH/bin:$PATH
 RUN mkdir -p $PROJECT_DIR
 WORKDIR $PROJECT_DIR
